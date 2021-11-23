@@ -1,55 +1,73 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <title>Gesture Interactions - A-Frame & AR.js</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="styles.css" />
-
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <script src="gesture-detector.js"></script>
-    <script src="gesture-handler.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
   </head>
-
   <body>
-    <a-scene
-      arjs
-      embedded
-      renderer="logarithmicDepthBuffer: true;"
-      vr-mode-ui="enabled: false"
-      gesture-detector
-      id="scene"
-    >
-      <a-assets>
-        <a-asset-item
-          /*id="bowser"
-          /*src="https://cdn.glitch.com/06bd98b4-97ee-4c07-a546-fe39ca205034%2Fbowser.glb"*/
-          id="Pasta"
-          src="./Pasta.glb"
-        >
-        </a-asset-item>
-      </a-assets>
+    <div class="hero">
+      <div class="hero-conteiner">
+        <h1>Menu</h1>
+        <div class="conteinerPlatillo">
+          <div class="platillo">
+            <h2>Tacos</h2>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <a href="Pasta.html"><img width="100%" src="tacos.jpg" alt="" /></a>
+          </div>
+        </div>
 
-      <a-marker
-        preset="hiro"
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="markerA"
-      >
-        <a-entity
-          id="Pasta-model"
-          gltf-model="#Pasta"
-          position="0 0 0"
-          scale="0.95 0.95 0.95"
-          class="clickable"
-          gesture-handler
-        >
-        </a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
+        <div class="conteinerPlatillo">
+          <div class="platillo">
+            <h2>Tacos</h2>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <a href="Pasta.html"><img width="100%" src="tacos.jpg" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="conteinerPlatillo">
+          <div class="platillo">
+            <h2>Tacos</h2>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <a href="Pasta.html"><img width="100%" src="tacos.jpg" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="conteinerPlatillo">
+          <div class="platillo">
+            <h2>Tacos</h2>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <a href="Pasta.html"><img width="100%" src="tacos.jpg" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="conteinerPlatillo">
+          <div class="platillo">
+            <h2>Tacos</h2>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <a href="Pasta.html"><img width="100%" src="tacos.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+
+      <br />
+    </div>
   </body>
 </html>
